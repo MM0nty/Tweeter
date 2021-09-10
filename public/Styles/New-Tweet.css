@@ -1,0 +1,45 @@
+.new-tweet {
+  padding: 5% 5%;
+}
+
+.empty {
+  display: none;
+  border: red solid 5px;
+  color: red;
+  padding: 10px;
+}
+
+.alert {
+  display: none;
+  border: red solid 5px;
+  color: red;
+  padding: 10px;
+}
+
+#tweet-text {
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid black;
+  width: 100%;
+}
+
+.output {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+button {
+
+  color: white;
+  font-family: 'Bungee', cursive;
+  background-color: blue;
+}
+
+.counter {
+  font-family: 'Bungee', cursive;
+}
+
+.limit {
+  color: red;
+}
