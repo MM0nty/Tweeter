@@ -10,7 +10,7 @@ header.profile {
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
-/*desktop */
+/*desktop layout*/
 @media only screen and (min-width: 1024px) {
   header.profile {
     width: 500px;
@@ -19,6 +19,7 @@ header.profile {
   }
 }
 
+/* tablet and smaller layout */
 @media only screen and (max-width: 1024px) {
   header.profile {
     padding-top: 120px;;

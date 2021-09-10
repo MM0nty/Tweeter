@@ -24,6 +24,7 @@ span.nav {
   font-size: 28px;
 }
 
+/* tablet and smaller layout */
 @media only screen and (max-width: 1024px) {
   nav {
   background-color: dodgerblue;

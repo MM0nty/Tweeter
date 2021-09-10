@@ -80,7 +80,7 @@ article.tweet footer {
    color: #4056A1;
  }
 
- /* desktop */
+ /* desktop layout*/
 @media only screen and (min-width: 1024px) {
   body {
     display: flex;

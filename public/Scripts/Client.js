@@ -1,6 +1,7 @@
 $('document').ready(function() {
 
-  const createTweet = function(tweet) {//create new HTML if HTML
+  const createTweet = function(tweet) {
+    //To prevent XSS
     const escape = function(string) {
       let div = document.createElement("div");
       div.appendChild(document.createTextNode(string));
@@ -30,13 +31,12 @@ $('document').ready(function() {
   }
 
   const renderTweets = function(tweets) {
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    //method how to remove tweet elements from container and repopulate them
+    // empties container before posting anything
     $("#tweet-container").empty();//string = selector
+    // loops through tweets and calls createTweet for each tweet
     tweets.forEach(function(tweet) {
       const $tweet = createTweet(tweet);
-      // takes return value and appends it to the tweets container
+      // takes return value and appends it to the tweets-container
       $("#tweet-container").prepend($tweet);
     })
   }
@@ -53,12 +53,13 @@ $('document').ready(function() {
       $(".alert").slideDown();
       return;
     }
-    $.post("/tweets", post).then(function(data, status) {//creates post
-      //waits for post before getting
+    $.post("/tweets", post).then(function(data, status) {
+      // waits for post before getting
       $(".empty").slideUp();
       $(".alert").slideUp();
-      // success callback function will call up renderTweets, passing it the response from the AJAX request.
+      // toggle alert and don't post
       $("#tweet-text").val(null);
+      // calls up renderTweets, passing it the response from the AJAX request
       $.ajax("/tweets", { method: "GET" })
         .then(function(tweet) {
           renderTweets(tweet);
@@ -66,7 +67,7 @@ $('document').ready(function() {
     })
   })
 
-  //The loadtweets function will use jQuery to make a request to /tweets and receive the array of tweets as JSON.
+  // Uses jQuery to make a request to /tweets and receive the array of tweets as JSON.
   const loadTweets = function() {
     $.ajax("/tweets", { method: "GET" })
       .then(function(tweets) {
