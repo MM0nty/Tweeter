@@ -6,11 +6,11 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Final Product
 
-!["Screenshot of URLs page"](https://github.com/MM0nty/Tiny-App/blob/fb8343fcaed0afb96a014042c09844ea94f803c6/Documents/URLs-Page.png)
+!["Screenshot of desktop layout"](https://github.com/MM0nty/Tweeter/blob/6afff236c820fe297f20c27a4f6bc4508bdc4878/Documents/Desktop-Layout-Design.png)
 
-!["Screenshot of Show page"](https://github.com/MM0nty/Tiny-App/blob/fb8343fcaed0afb96a014042c09844ea94f803c6/Documents/ShortURL-Page.png)
+!["Screenshot of tablet layout"](https://github.com/MM0nty/Tweeter/blob/6afff236c820fe297f20c27a4f6bc4508bdc4878/Documents/Tablet-Layout-Design.png)
 
-!["Screenshot of Show page"](https://github.com/MM0nty/Tiny-App/blob/fb8343fcaed0afb96a014042c09844ea94f803c6/Documents/Registration-Page.png)
+!["Screenshot of character limit exceeded tweet"](https://github.com/MM0nty/Tweeter/blob/6afff236c820fe297f20c27a4f6bc4508bdc4878/Documents/Error.png)
 
 ## Dependencies
 
