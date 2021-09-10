@@ -23,3 +23,10 @@ span.nav {
   align-items: center;
   font-size: 28px;
 }
+
+@media only screen and (max-width: 1024px) {
+  nav {
+  background-color: dodgerblue;
+  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+  }
+}

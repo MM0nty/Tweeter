@@ -1,5 +1,5 @@
 .new-tweet {
-  padding: 5% 5%;
+  padding: 50px;
 }
 
 .empty {
@@ -26,11 +26,10 @@
 .output {
   display: flex;
   justify-content: space-between;
-  padding: 1%;
+  padding: 10px;
 }
 
 button {
-
   color: white;
   font-family: 'Bungee', cursive;
   background-color: blue;

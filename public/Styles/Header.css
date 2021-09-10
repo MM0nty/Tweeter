@@ -1,8 +1,5 @@
 header.profile {
   z-index: 1;
-  padding-top: 120px;
-  height: 520px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,4 +8,19 @@ header.profile {
   background-color: dodgerblue;
   background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+/*desktop */
+@media only screen and (min-width: 1024px) {
+  header.profile {
+    width: 500px;
+    height: 400px;
+    margin: 220px 50px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  header.profile {
+    padding-top: 120px;;
+  }
 }

@@ -20,12 +20,12 @@ body {
 }
 
  #tweet-container {
-   padding: 5%;
+   padding: 50px;
  }
 
  .tweet {
    border: solid black 5px;
-   margin: 5%;
+   margin: 35px;
  }
 
  article:hover {
@@ -36,7 +36,7 @@ body {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 2% 3%;
+   padding: 10px 20px;
  }
 
  span.user {
@@ -54,16 +54,15 @@ body {
  }
 
  .tweet-body {
-   padding: 3%;
+   padding: 20px;
    font-weight: 600;
  }
 
-footer {
-  /* article.tweet footer? */
+article.tweet footer {
   display: flex;
   justify-content: space-between;
-  padding: 1%;
-  margin: 1%;
+  padding: 5px;
+  margin: 5px;
   border-top: solid black 5px;
 }
 
@@ -77,6 +76,17 @@ footer {
  }
 
  .icon {
-   padding: 5%;
+   padding: 5px;
    color: #4056A1;
  }
+
+ /* desktop */
+@media only screen and (min-width: 1024px) {
+  body {
+    display: flex;
+  }
+
+  main {
+    margin-top: 120px;
+  }
+}
